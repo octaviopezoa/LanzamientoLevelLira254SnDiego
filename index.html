@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LEVEL Arriendos</title>
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+
+  <body>
+
+    <!-- portada -->
+    <section class="hero is-fullheight bg-img">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div id="mostrar" class="navbar-brand plt40">
+          <a class="" href=".">
+            <img src="./assets/img/level_logo.png" width="150px" alt="Level Arriendos">
+          </a>
+        </div>
+      </nav>
+
+      <div class="hero-head">
+      </div>
+      <div class="hero-body is-left">
+        <div class="container">
+          <div class="columns is-marginless is-paddingless is-centered">
+            <div class="column is-9-tablet">
+              <p class="has-text-white is-size-1 is-size-2-mobile has-text-left DINN has-text-weight-bold is-italic portada">ARRIENDA EN<br>STGO. CENTRO</p>
+              <p class="has-text-white is-size-3 is-size-4-mobile has-text-left DINN has-text-weight-bold is-italic has-text-primary">LIRA 254 / SAN DIEGO 895</p>
+            </div>
+            <div id="tituloP" class="column is-3-tablet ajuste" style="margin-top: -300px;">
+              <!-- <div class="box"> -->
+                <form action="" method="post">
+                    <div id="f-close" class="box flotante">                                              
+                      <div class="has-background-primary is-centered mb20 is-fixed-top">
+                        <a href="#mostrar" class="button is-primary is-fullwidth has-text-white DINN has-text-weight-bold has-text-white is-size-4 is-size-6 has-text-centered ptb10">¿QUIERES VIVIR EN UN LEVEL?</a>
+                      </div>                      
+                    </div>
+                    <div id="f-open" class="box">
+                      <div class="has-background-primary is-centered mb20">
+                        <p class="is-fullwidth has-text-white DINN has-text-weight-bold has-text-white is-size-4 is-size-6 has-text-centered ptb10">¿QUIERES VIVIR EN UN LEVEL?</p>
+                      </div>
+
+                      <!-- nombre -->
+                      <div class="field">                            
+                        <div class="control">
+                          <input class="input" type="text" id="nombres" name="nombres" placeholder="Nombre y Apellido" autofocus required>
+                        </div>
+                      </div>
+                        
+                      <!-- rut -->
+                      <div class="field">                            
+                        <div class="control">
+                          <input class="input" type="text" id="rut" name="rut" placeholder="RUT" required>
+                        </div>
+                      </div>
+                      
+                      <!-- telefono -->
+                      <div class="field">                            
+                        <div class="control">
+                          <input class="input" type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+                        </div>
+                      </div>
+                        
+                      <!-- email -->
+                      <div class="field">
+                        <div class="control">
+                          <input class="input" type="email" name="email" placeholder="Email" required>
+                        </div>
+                      </div>
+                        
+                      <!-- proyecto -->
+                      <div class="field">
+                        <div class="control">
+                          <div class="select is-fullwidth">
+                            <select name="proyecto" id="proyecto">
+                              <option value="" disabled selected>Proyecto</option>
+                              <option value="Lira 254">Lira 254</option>
+                              <option value="San Diego">San Diego</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- boton -->
+                      <div class="">
+                        <button class="button is-fullwidth is-primary"><p class="DINN has-text-weight-bold">ENVIAR</p></button>
+                      </div>
+                          
+                    </div>
+                </form>
+              <!-- </div> -->
+            </div>
+          </div>          
+        </div>
+      </div>
+      <div class="hero-foot"></div>
+    </section>
+    
+    <!-- planos -->
+    <section class="hero is-fullheight has-background-primary" style="z-index: 999;">
+      <div class="hero-head"></div>
+      <div class="hero-body">
+        <div class="container">          
+          <div class="columns is-marginless is-paddingless is-centered">
+
+            <!-- san diego -->
+            <div class="colum is-5 is-12-mobile is-centered">
+
+              <!-- cabecera -->
+              <div class="has-text-centered mb40">
+                <p class="has-text-white DINN has-text-weight-bold is-size-2">SAN DIEGO 895</p>
+                <p class="has-text-white DINN has-text-weight-bold is-size-5">DEPTOS. DE 1 Y 2 DORMS.</p>
+                <p class="has-text-white DINN has-text-weight-normal is-size-6">Disfruta el departamento perfecto para realizar tus proyectos o empezar una familia, con la mejor ubicación y áreas comunes ideales para ti.</p>
+              </div>
+
+              <!-- mapa -->
+              <div class="mb27">
+                <img src="./assets/img/sandiego.png" alt="">
+              </div>
+
+              <!-- footer -->
+              <div class="has-text-centered mb20">
+                <p class="has-text-white DINN has-text-weight-bold is-size-6">VIVE CERCA DEL METRO PARQUE ALMAGRO</p>
+                <p class="has-text-white DINN has-text-weight-normal is-size-6 is-size-7-mobile">TEATROS / COLEGIOS / HOSPITALES / AUTOPISTA</p>
+                <p class="has-text-white DINN has-text-weight-normal is-size-6 is-size-7-mobile">MUSEOS / PARQUES / CALLES PRINCIPALES Y MUCHO MÁS</p>
+              </div>
+
+              <div class="has-text-centered mb40">
+                <a href="" class="button"><p class="DINN has-text-weight-bold is-size-4 is-size-5-mobile has-text-primary">TOUR VIRTUAL</p></a>
+                <a id="cotiza-sandiego" href="#mostrar" class="button"><p class="DINN has-text-weight-bold is-size-4 is-size-5-mobile has-text-primary">COTIZA AQUÍ </p></a>
+              </div>
+
+            </div>
+
+            <!-- intermedio -->
+            <div class="column is-1 is-hidden-mobile"></div>
+
+            <!-- lira 254 -->
+            <div class="colum is-5 is-12-mobile is-centered">
+              <!-- cabecera -->
+              <div class="has-text-centered mb40">
+                <p class="has-text-white DINN has-text-weight-bold is-size-2">LIRA 254</p>
+                <p class="has-text-white DINN has-text-weight-bold is-size-5">DEPTOS. DE 1 DORM.</p>
+                <p class="has-text-white DINN has-text-weight-normal is-size-6">Empieza una nueva aventura en un departamento pensado en tu independencia. Vive con gran conectividad, cerca de todo lo que necesitas.</p>
+              </div>
+
+              <!-- mapa -->
+              <div class="">
+                <img src="./assets/img/lira254.png" alt="">
+              </div>
+
+              <!-- footer -->
+              <div class="has-text-centered mb20">
+                <p class="has-text-white DINN has-text-weight-bold is-size-6">VIVE CERCA DEL METRO SANTA LUCÍA</p>
+                <p class="has-text-white DINN has-text-weight-normal is-size-6 is-size-7-mobile">UNIVERSIDADES / CENTROS MÉDICOS / PARQUES</p>
+                <p class="has-text-white DINN has-text-weight-normal is-size-6 is-size-7-mobile">HOSPITALES / CALLES PRINCIPALES Y MUCHO MÁS</p>
+              </div>
+
+              <div class="has-text-centered mb40">
+                <a href="" class="button"><p class="DINN has-text-weight-bold is-size-4 is-size-5-mobile has-text-primary">TOUR VIRTUAL</p></a>
+                <a id="cotiza-lira" href="#mostrar" class="button"><p class="DINN has-text-weight-bold is-size-4 is-size-5-mobile has-text-primary">COTIZA AQUÍ </p></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot"></div>
+    </section>
+    
+    <!-- amenities -->
+    <section class="hero is-fullheight has-background-dark">            
+            
+      <div class="hero-body bg-img2">
+        <div class="container">              
+
+          <div class="columns pt-50">
+            <div class="column is-5 is-12-mobile">
+              <p class="has-text-primary is-size-1 is-size-2-mobile has-text-left DINN has-text-weight-bold is-italic portada">SOMOS LEVEL</p>
+              <P class="has-text-white is-size-5 is-size-5-mobile has-text-left DINN has-text-weight-bold">UNA COMUNIDAD DE 6.980 PERSONAS 
+                  DISTRIBUIDAS 7 EDIFICIOS EN LAS COMUNAS 
+                  DE INDEPENDENCIA Y STGO. CENTRO. 
+                  GRACIAS A NUESTRO SERVICIO Y EXPERTIZ, 
+                  HOY SOMOS LA MEJOR EXPERIENCIA EN 
+                  ARRIENDO DE DEPARTAMENTOS.</P>
+            </div>            
+          </div>
+          <div class="columns is-12 is-12-mobile is-centered">
+              <P class="has-text-white is-size-5 is-size-5-mobile has-text-left DINN has-text-weight-bold">NUESTROS EDIFICIOS CUENTAN CON</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="container">
+          <div class="columns is-marginless is-multiline is-mobile is-centered">
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/09.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">STAFF PROFESIONAL A TU DISPOSICIÓN</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/10.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">GASTOS COMUNES FIJOS</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/11.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">SISTEMA DE SEGURIDAD PROFESIONAL</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/12.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">BICICLETERO</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/13.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">QUINCHO</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/14.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">SALA GOURMET</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/15.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">SALA MIRADOR</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/16.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">LAVANDERÍA</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/17.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">SALA INFANTIL</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/18.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">GIMNASIO</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/19.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">PISCINA</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/20.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">SALA MULTIUSO</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/21.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">QUINCHOS CERRADOS</p>
+              </div>
+            </div>
+            <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
+              <img src="./assets/img/22.jpg" alt="">
+              <div class="titulos">
+                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">EXCELENTE UBICACIÓN</p>
+              </div>
+            </div>
+            <div class="column is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile"><img src="./assets/img/25.jpg" alt=""></div>
+          </div>
+        </div>
+                              
+        <div class="columns is-marginless is-paddingless has-background-primary DINN">
+          <div class="column is-9">
+            <p class="is-size-7 has-text-white ptlb20 is-hidden-mobile"><span class="has-text-weight-bold">NUESTROS PROYECTOS: </span>
+              <a class="has-text-white has-text-weight-normal" href="http://www.leveleuro.cl/nuestros-edificios/lira254/" target="_blank">LIRA 254</a> /
+              <a class="has-text-white has-text-weight-normal" href="http://www.leveleuro.cl/nuestros-edificios/san-diego/" target="_blank">SAN DIEGO</a> /
+              <a class="has-text-white has-text-weight-normal" href="http://www.leveleuro.cl/nuestros-edificios/lira-2/" target="_blank">LIRA 320</a> /
+              <a class="has-text-white has-text-weight-normal" href="http://www.leveleuro.cl/nuestros-edificios/portugal-2/" target="_blank">PORTUGAL</a> /
+              <a class="has-text-white has-text-weight-normal" href="http://www.leveleuro.cl/nuestros-edificios/arturo-prat/" target="_blank">ARTURO PRAT</a> /
+              <a class="has-text-white has-text-weight-normal" href="http://www.leveleuro.cl/nuestros-edificios/san-ignacio/" target="_blank">SAN IGNACIO</a> /
+              <a class="has-text-white has-text-weight-normal" href="http://www.leveleuro.cl/nuestros-edificios/hiprodomo/" target="_blank">HIPÓDROMO</a>
+            </p>
+          </div>        
+          <div class="column is-3 has-text-right has-text-centered-mobile">
+            <p class="has-text-white is-size-7 is-size-5-mobile ptlb20 pr20">
+              <a class="has-text-white has-text-weight-bold" href="http://www.leveleuro.cl/wp-content/uploads/2019/05/6_PASOS_ARRIENDO_LEVEL.pdf" target="_blank">6 PASOS PARA ARRENDAR EN LEVEL</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/functions.js"></script>    
+  </body>
+</html>

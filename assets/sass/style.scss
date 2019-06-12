@@ -1,0 +1,189 @@
+// 1. Importar variables iniciales
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/functions";
+
+// 2. Variables que quieras cambiar de Bulma
+$primary: #EF7D00;
+$size-1: 4rem;
+
+
+// 3. Importar Bulma
+@import "bulma/bulma.sass";
+
+
+//Fonts
+
+
+
+
+
+@font-face {
+    font-family: 'DINNextLTPro';
+    src: url('../fonts/DINNextLTPro-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DINNextLTPro';
+    src: url('../fonts/DINNextLTPro-LightItalic.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DINNextLTPro';
+    src: url('../fonts/DINNextLTPro-Heavy.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTPro';
+    src: url('../fonts/DINNextLTPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTPro';
+    src: url('../fonts/DINNextLTPro-Regular.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.DINN {
+    font-family: "DINNextLTPro";
+}
+
+.portada { 
+    letter-spacing: 1pt;      /* para separar entgre letras */ 
+    word-spacing: 5pt;        /* para separacion entre palabras */   
+    line-height: 3rem;        /* para la separacion entre lineas */  
+} 
+
+ 
+//Fondos
+.bg-img {
+    background-image: url('../img/fondodk.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+
+.bg-img2 {
+    background-image: url('../img/seccion3.png');
+    background-position:  center top;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+
+//varios CSS
+.n2 {    
+    z-index: 2;
+    position: relative;
+}
+
+.box {
+    border-radius: 0;
+}
+
+
+
+.ptb10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.ptlb20 {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.pr20 {
+    padding-right: 30px;
+}
+
+.pt-50{
+    padding-top: -200px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb27 {
+    margin-bottom: 27px;
+}
+.mb40 {
+    margin-bottom: 40px;
+}
+.mb100 {
+    margin-bottom: 100px;
+}
+
+.plt40{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.input, .select select {
+    background: #D9D9D9;
+    
+}
+
+.imagen {
+    position: relative;
+    width: 100%;
+    height: 95%;
+    // color: black;
+    // opacity: 0.1;    
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+}
+
+.titulos {    
+    position: absolute; 
+    top: 6vh;
+    // left: 5%; 
+    width: 100%;  
+    text-shadow: 2px 2px black;    
+}
+
+.frase {
+    z-index: 3;
+}
+
+.ajuste {
+    margin-top: -10vh;
+}
+
+
+.imagen:hover {
+    // opacity: 1;
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    .titulos {
+        opacity: 0;   
+    }
+}
+
+
+.flotante {
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    // width: 345px;
+    // height: 200px;
+    -webkit-animation: fade-in-up .25s ease forwards;
+            animation: fade-in-up .25s ease forwards;
+    // border: 5px solid #888d92;
+}
