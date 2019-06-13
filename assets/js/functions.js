@@ -31,21 +31,23 @@ $(document).ready(function() {
     $("#tituloP").removeClass('ajuste');
     $("#tituloP").addClass('movil');    
     $("#f-close").addClass('is-fixed-bottom');
+    $("#mostrar").addClass('navbar-start--centered');
     $("#mostrar").removeClass('plt40');
+    $("#mostrar").removeClass('izq');
 
 
     $(function(){
       $(window).scroll(function(){        
 
         // ocultar/mostrar form y boton
-        if ($(window).scrollTop() > 30 && $(window).scrollTop() < 463 || $(window).scrollTop() > 1900)
+        if ($(window).scrollTop() > 350 && $(window).scrollTop() < 245 || $(window).scrollTop() > 1700)
         {
             $("#f-open").fadeOut('slow');
             $("#f-close").fadeIn('slow');
         }
         else
         { 
-          if ($(window).scrollTop() < 30)
+          if ($(window).scrollTop() < 350)
             $("#f-open").fadeIn('slow');
             $("#f-close").fadeOut('slow');
         };

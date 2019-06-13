@@ -15,8 +15,6 @@ $size-1: 4rem;
 
 
 
-
-
 @font-face {
     font-family: 'DINNextLTPro';
     src: url('../fonts/DINNextLTPro-HeavyItalic.woff2') format('woff2'),
@@ -95,7 +93,6 @@ $size-1: 4rem;
 }
 
 
-
 .ptb10 {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -112,6 +109,10 @@ $size-1: 4rem;
 
 .pt-50{
     padding-top: -200px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
 }
 
 .mb20 {
@@ -173,25 +174,28 @@ $size-1: 4rem;
     }
 }
 
+.navbar-start--centered {
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+.izq{
+    padding-left: 50px;
+}  
 
 .flotante {
     z-index: 30;
     position: fixed;
-    // top: 0;
-    // right: 20px;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
-    // width: 345px;
-    // height: 200px;
     -webkit-animation: fade-in-up .25s ease forwards;
             animation: fade-in-up .25s ease forwards;
     // border: 5px solid #888d92;
 }
 
 
-
 @media only screen and (max-width: 480px) {
     .flotante {
-      bottom: 0;
+      bottom: 150px;
     }
-  }
+}

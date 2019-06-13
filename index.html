@@ -8,13 +8,104 @@
     <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NVTMP6Z');</script>
+      <!-- End Google Tag Manager -->
+  
+  
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129135609-1"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+  
+          function gtag() {
+              dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+  
+          gtag('config', 'UA-129135609-1');
+      </script>
+      <!-- Fin Google Analytics-->
+  
+      <!-- Facebook Pixel Code -->
+      <script>
+          ! function(f, b, e, v, n, t, s) {
+              if (f.fbq) return;
+              n = f.fbq = function() {
+                  n.callMethod ?
+                      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+              };
+              if (!f._fbq) f._fbq = n;
+              n.push = n;
+              n.loaded = !0;
+              n.version = '2.0';
+              n.queue = [];
+              t = b.createElement(e);
+              t.async = !0;
+              t.src = v;
+              s = b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t, s)
+          }(window, document, 'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '343649909780455');
+          fbq('track', 'PageView');
+      </script>
+      <noscript>
+      <img height="1" width="1" 
+      src="https://www.facebook.com/tr?id=343649909780455&ev=PageView
+      &noscript=1"/>
+      </noscript>
+      <!-- End Facebook Pixel Code -->
+  
+      <!--PIXEL POST PAGE-->
+      <!-- Facebook Pixel Code -->
+      <script>
+          ! function(f, b, e, v, n, t, s) {
+              if (f.fbq) return;
+              n = f.fbq = function() {
+                  n.callMethod ?
+                      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+              };
+              if (!f._fbq) f._fbq = n;
+              n.push = n;
+              n.loaded = !0;
+              n.version = '2.0';
+              n.queue = [];
+              t = b.createElement(e);
+              t.async = !0;
+              t.src = v;
+              s = b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t, s)
+          }(window, document, 'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '206726853582312');
+          fbq('track', 'PageView');
+      </script>
+      <noscript>
+          <img height="1" width="1" 
+          src="https://www.facebook.com/tr?id=206726853582312&ev=PageView
+          &noscript=1"/>
+      </noscript>
+      <!-- End Facebook Pixel Code -->
+
   <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVTMP6Z"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+      
 
     <!-- portada -->
     <section class="hero is-fullheight bg-img">
       <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div id="mostrar" class="navbar-brand plt40 is-centered-mobile">
-          <a class="" href=".">
+        <div id="mostrar" class="navbar-brand izq">
+          <a class="has-text-centered" href=".">
+            <br><br>
             <img src="./assets/img/level_logo.png" width="150px" alt="Level Arriendos">
           </a>
         </div>
@@ -26,14 +117,14 @@
         <div class="container">
           <div class="columns is-marginless is-paddingless is-centered">
             <div class="column is-9-tablet is-12-mobile">
-              <p class="has-text-white is-size-1 is-size-2-mobile has-text-left DINN has-text-weight-bold is-italic portada">ARRIENDA EN<br>STGO. CENTRO</p>
-              <p class="has-text-white is-size-3 is-size-4-mobile has-text-left DINN has-text-weight-bold is-italic has-text-primary">LIRA 254 / SAN DIEGO 895</p>
+              <p class="has-text-white is-size-1 is-size-2-mobile has-text-left has-text-centered-mobile DINN has-text-weight-bold is-italic portada">ARRIENDA EN<br>STGO. CENTRO</p>
+              <p class="has-text-white is-size-3 is-size-4-mobile has-text-left has-text-centered-mobile DINN has-text-weight-bold is-italic has-text-primary">LIRA 254 / SAN DIEGO 895</p>
             </div>
             <div id="tituloP" class="column is-3-tablet is-12-mobile ajuste">
               <!-- <div class="box"> -->
-                <form action="" method="post">
+                <form action="snd.php" method="post">
                     <div id="f-close" class="box flotante">                                              
-                      <div class="has-background-primary is-centered mb20">
+                      <div class="has-background-primary is-centered mb5">
                         <a href="#mostrar" class="button is-primary is-fullwidth has-text-white DINN has-text-weight-bold has-text-white is-size-4 is-size-6 has-text-centered ptb10">¿QUIERES VIVIR EN UN LEVEL?</a>
                       </div>                      
                     </div>
@@ -45,7 +136,7 @@
                       <!-- nombre -->
                       <div class="field">                            
                         <div class="control">
-                          <input class="input" type="text" id="nombres" name="nombres" placeholder="Nombre y Apellido" autofocus required>
+                          <input class="input" type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" autofocus required>
                         </div>
                       </div>
                         
@@ -66,7 +157,7 @@
                       <!-- email -->
                       <div class="field">
                         <div class="control">
-                          <input class="input" type="email" name="email" placeholder="Email" required>
+                          <input class="input" type="correo" name="correo" placeholder="Email" required>
                         </div>
                       </div>
                         
@@ -74,7 +165,7 @@
                       <div class="field">
                         <div class="control">
                           <div class="select is-fullwidth">
-                            <select name="proyecto" id="proyecto">
+                            <select name="proyecto" id="proyecto" required>
                               <option value="" disabled selected>Proyecto</option>
                               <option value="Lira 254">Lira 254</option>
                               <option value="San Diego">San Diego</option>
@@ -198,85 +289,85 @@
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/09.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">STAFF PROFESIONAL A TU DISPOSICIÓN</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">STAFF PROFESIONAL <br>A TU DISPOSICIÓN</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/10.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">GASTOS COMUNES FIJOS</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">GASTOS COMUNES FIJOS</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/11.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">SISTEMA DE SEGURIDAD PROFESIONAL</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">SISTEMA DE SEGURIDAD PROFESIONAL</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/12.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">BICICLETERO</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">BICICLETERO</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/13.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">QUINCHO</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">QUINCHO</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/14.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">SALA GOURMET</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">SALA GOURMET</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/15.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">SALA MIRADOR</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">SALA MIRADOR</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/16.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">LAVANDERÍA</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">LAVANDERÍA</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/17.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">SALA INFANTIL</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">SALA INFANTIL</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/18.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">GIMNASIO</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">GIMNASIO</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/19.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">PISCINA</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">PISCINA</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/20.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">SALA MULTIUSO</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">SALA MULTIUSO</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/21.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">QUINCHOS CERRADOS</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">QUINCHOS CERRADOS</p>
               </div>
             </div>
             <div class="column imagen is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile" data-overlay>
               <img src="./assets/img/22.jpg" alt="">
               <div class="titulos">
-                <p class="frase DINN has-text-weight-bold has-text-centered has-text-white">EXCELENTE UBICACIÓN</p>
+                <p class="frase DINN has-text-weight-bold has-text-centered is-size-6 is-size-7-mobile has-text-white">EXCELENTE UBICACIÓN</p>
               </div>
             </div>
             <div class="column is-centered is-paddingless is-2-desktop is-2-tablet is-4-mobile"><img src="./assets/img/25.jpg" alt=""></div>
