@@ -152,7 +152,7 @@ $size-1: 4rem;
     top: 6vh;
     // left: 5%; 
     width: 100%;  
-    text-shadow: 2px 2px black;    
+    text-shadow: 2px 2px rgb(133, 41, 41);    
 }
 
 .frase {
@@ -160,7 +160,7 @@ $size-1: 4rem;
 }
 
 .ajuste {
-    margin-top: -10vh;
+    margin-top: -150px;
 }
 
 
@@ -177,8 +177,8 @@ $size-1: 4rem;
 .flotante {
     z-index: 30;
     position: fixed;
-    top: 0;
-    right: 20px;
+    // top: 0;
+    // right: 20px;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
     // width: 345px;
@@ -187,3 +187,11 @@ $size-1: 4rem;
             animation: fade-in-up .25s ease forwards;
     // border: 5px solid #888d92;
 }
+
+
+
+@media only screen and (max-width: 480px) {
+    .flotante {
+      bottom: 0;
+    }
+  }

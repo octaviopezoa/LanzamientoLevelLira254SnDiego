@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 
   // oculto boton formulario
-  $('#f-close').hide('slow');
+  $('#f-close').hide();
 
 
   // cargo formulario con boton formulario
@@ -26,10 +26,16 @@ $(document).ready(function() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
   if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
-    $(function(){
-      $(window).scroll(function(){
 
-        $("#tituloP").removeClass('ajuste');
+    // mobile
+    $("#tituloP").removeClass('ajuste');
+    $("#tituloP").addClass('movil');    
+    $("#f-close").addClass('is-fixed-bottom');
+    $("#mostrar").removeClass('plt40');
+
+
+    $(function(){
+      $(window).scroll(function(){        
 
         // ocultar/mostrar form y boton
         if ($(window).scrollTop() > 30 && $(window).scrollTop() < 463 || $(window).scrollTop() > 1900)
@@ -49,11 +55,12 @@ $(document).ready(function() {
   } 
   else
   {
+    // desktop
     $(function(){
       $(window).scroll(function(){
 
         // ocultar/mostrar form y boton
-        if ($(window).scrollTop() > 30 && $(window).scrollTop() < 445 || $(window).scrollTop() > 950)
+        if ($(window).scrollTop() > 30 && $(window).scrollTop() < 445 || $(window).scrollTop() > 1300)
         {
             $("#f-open").fadeOut('slow');
             $("#f-close").fadeIn('slow');
